@@ -1,0 +1,42 @@
+package pkg1;
+
+public class Employee {
+	public String name;
+	private int age;
+	private int empId;
+	private String contactNo;
+	
+	public Employee() {}
+
+	public Employee(String name,int age,int empId,String contactNo) {
+		super();
+		this.name=name;
+		this.age=age;
+		this.empId=empId;
+		this.contactNo=contactNo;
+	}
+	public String getname() {
+		return name;
+	}
+	public void setname(String name) {
+		this.name=name;
+	}
+	public int getage() {
+		return age;
+	}
+	public void setage(int age) {
+		this.age=age;
+	}
+	public int getempId() {
+		return empId;
+	}
+	public void setempId(int empId) {
+		this.empId=empId;
+	}
+	public String getcontactNo() {
+		return contactNo;
+	}
+	public void setcontactNo(String contactNo) {
+		this.contactNo=contactNo;
+	}
+}

@@ -1,0 +1,27 @@
+package lab1;
+
+public class Main {
+	static void FibonacciSeriesNonRecursion(){
+		int n1=1,n2=1,n=5,count=0;
+		if(n<1) {
+			System.out.println("enter positive number");
+		}else if(n==1) {
+			System.out.println(n1);
+		}else {
+			while(count<n) {
+				System.out.println(n1);
+				int nth=n1+n2;
+				n1=n2;
+				n2=nth;
+				count+=1;
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FibonacciSeriesNonRecursion();
+
+	}
+
+}

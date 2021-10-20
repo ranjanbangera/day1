@@ -1,0 +1,21 @@
+package Day2;
+
+public class getImage {
+	static String getReverse(String str) {
+		String str3="";
+		for(int i=0;i<str.length();i++) {
+			str3=str.charAt(i)+str3;
+			
+		}
+		return str3;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="EARTH";
+		String str2=getReverse(str);
+		System.out.println(str+"|"+str2);
+
+	}
+
+}

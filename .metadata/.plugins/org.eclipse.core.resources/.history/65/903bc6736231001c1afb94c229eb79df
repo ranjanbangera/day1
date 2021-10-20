@@ -1,0 +1,36 @@
+package day3;
+
+public class StringBufferAndBuilder {
+
+	public static void main(String[] args) {
+		//String Buffer
+		String str1=new String("hello");
+		String str2=new String("hello");
+		
+		System.out.println(str1==str2);         //reference
+		System.out.println(str1.equals(str2));   //content
+		
+		StringBuffer sb1=new StringBuffer("hello");
+		StringBuffer sb2=new StringBuffer("hello");
+		
+		System.out.println(sb1==sb2);         //reference
+		System.out.println(sb1.equals(sb2));  //reference
+		
+		System.out.println(sb1.length());
+		System.out.println(sb1.capacity());     //16+5(hello)
+		System.out.println(sb1.append("hihi"));
+		System.out.println(sb1.capacity());    //21 because appended string not exceeding 16
+		System.out.println(sb1.append("abcdefghijklmnopqrstu"));
+		System.out.println(sb1.capacity());   //44 bcus new appended string exceeding 16
+		
+		
+		StringBuilder sbr1=new StringBuilder("hiii");
+		StringBuilder sbr2=new StringBuilder("hiii");
+		
+		String str3=new String(sbr1);
+		System.out.println(str3);
+		
+
+	}
+
+}

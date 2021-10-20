@@ -1,0 +1,16 @@
+package lab1;
+
+public class Cube {
+	
+
+	public static void main(String[] args) {
+		int n=3;
+		int res=n*3;
+		System.out.println("cube of "+n+"is "+res);
+		
+		
+				
+
+	}
+
+}

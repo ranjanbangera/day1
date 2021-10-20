@@ -1,0 +1,23 @@
+package lab1;
+
+public class FibonacciRecursive {
+	static int n1=1,n2=1,n3;
+	static void Fibonacci(int num) {
+		if(num>0) {
+			n3=n1+n2;
+			n1=n2;
+			n2=n3;
+			System.out.println(" "+n3);
+			Fibonacci(num-1);
+		}
+	}
+
+	public static void main(String[] args) {
+		int num=5;
+		System.out.println(n1+" "+n2);
+		Fibonacci(num-2);
+		
+
+	}
+
+}

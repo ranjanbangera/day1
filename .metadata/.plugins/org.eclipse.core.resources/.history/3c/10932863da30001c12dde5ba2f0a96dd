@@ -1,0 +1,11 @@
+package lab1;
+
+public class CheckNumberr {
+
+	public static void main(String[] args) {
+		int num=123456;
+		
+
+	}
+
+}

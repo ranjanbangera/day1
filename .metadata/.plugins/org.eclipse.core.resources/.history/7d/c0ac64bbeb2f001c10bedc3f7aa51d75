@@ -1,0 +1,14 @@
+package pkg1;
+
+public class TestEmp1 {
+
+	public static void main(String[] args) {
+		Employee emp1=new Employee();
+		Employee emp2=new Employee();
+		Employee emp3=new Employee();
+		System.out.println(emp1.getname());
+		
+
+	}
+
+}

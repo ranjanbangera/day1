@@ -1,0 +1,28 @@
+package pkg1;
+
+public class TestEmp1 {
+
+	public static void main(String[] args) {
+		Employee emp1=new Employee();
+		Employee emp2=new Employee();
+		Employee emp3=new Employee();
+		System.out.println(emp1.getname());
+		System.out.println(emp1.getempId());
+		System.out.println(emp1.getage());
+		System.out.println(emp1.getcontactNo());
+		
+		emp1.setname="ram";
+		emp1.setage=0;
+		emp1.setempId=121;
+		emp1.setcontactNo="8754213265";
+		
+		System.out.println(emp1.getname());
+		System.out.println(emp1.getempId());
+		System.out.println(emp1.getage());
+		System.out.println(emp1.getcontactNo());
+		
+		
+
+	}
+
+}
