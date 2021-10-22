@@ -1,7 +1,7 @@
 package stringsandparsing;
 
 public class ModifyNumber {
-	static int modifynumber(String str) {
+	static int modifyNumber(String str) {
 		//new StringBuffer var
 		StringBuffer sb = new StringBuffer("");
 		for (int i = 0; i < str.length(); i++) {
@@ -9,7 +9,7 @@ public class ModifyNumber {
 			if (i == str.length() - 1) {
 				i = 0;
 				int st = str.charAt(i) - str.charAt(str.length() - 1);
-				//coverting -ve values to +ve
+				//Converting -ve values to +ve
 				if (st < 0) {
 					st = Math.abs(st);
 				}
@@ -17,7 +17,7 @@ public class ModifyNumber {
 				break;
 			} else {
 				int st = str.charAt(i) - str.charAt(i + 1);
-				//coverting -ve values to +ve
+				//Converting -ve values to +ve
 				if (st < 0) {
 					st = Math.abs(st);
 				}
@@ -29,13 +29,13 @@ public class ModifyNumber {
 		return result;
 	}
 	public static void main(String[] args) {
-		int num = 45862;
+		int num = 5935;
 		System.out.println("original value : ");
 		System.out.println(num);
 		//integer-->string
 		String str = Integer.toString(num);
 		System.out.println("after modifying : ");
-		System.out.println(modifynumber(str));
+		System.out.println(modifyNumber(str));
 
 	}
 
