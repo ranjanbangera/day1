@@ -7,7 +7,8 @@ public class InterfceDemo {
 	Rectangle r=new Rectangle();
 	r.area();
 	r.m1();
-	r.m2();
+	r
+	.m2();
 	}
 
 }
